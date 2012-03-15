@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory android:title="Advanced User Options">            
+    	<EditTextPreference
+			android:key="@string/settings_ssid"
+			android:title="SSID"
+			android:summary="SSID identifying your wireless hotspot"
+			android:dialogTitle="Network ID"/>   
+		<EditTextPreference
+			android:key="@string/settings_passphrase"
+			android:title="Passphase"
+			android:summary="WPA passphrase used to connect to your hotspot"
+			android:dialogTitle="Network Passphrase"/>     
+    </PreferenceCategory>
+			
+</PreferenceScreen>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_margin="5dip">
+
+    
+    <EditText 
+        android:id="@+id/settings_ssid"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:editable="false"	    
+	    android:hint="SSID"/>
+    
+    <EditText 
+        android:id="@+id/settings_passphrase"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"	
+	    android:editable="false"
+	    android:password="true"
+	    android:hint="Passphrase"/>
+    
+    <CheckBox 
+        android:id="@+id/settings_show_passphrase"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Show passphrase"/>
+    
+    <CheckBox 
+        android:id="@+id/settings_broadcast"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Disable SSID broadcast"/>
+    
+    <CheckBox 
+        android:id="@+id/settings_auto_start"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Enable auto start"/>
+    
+    <TextView
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Log:"
+	    android:textStyle="bold"/>
+    
+    <ScrollView 
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/settings_status"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/hello" />
+	</ScrollView>    
+	
+</LinearLayout>
+
+
+    <!-- 
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+        <Button android:id="@+id/main_refresh" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Refresh"/>         
+        <Button android:id="@+id/main_on" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="On"/>
+        <Button android:id="@+id/main_off" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Off"/>        
+   	</LinearLayout>  
+   	 -->
