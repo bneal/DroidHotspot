@@ -88,7 +88,7 @@ public class HotspotManager
 						Boolean result = (Boolean) method.invoke(mService, wifiConfig, enabled);
 						if (result)
 						{
-							for(int i = 0; (getWifiApState() != 13) && i < 20; i++)
+							for(int i = 0; (getWifiApState() != 13) && i < 25; i++)
 							{
 								Log.d(TAG, "waiting for AP to enable ...");
 								Thread.sleep(200);								

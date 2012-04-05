@@ -181,10 +181,10 @@ public class DroidHotspotActivity extends FragmentActivity
 		}
 		
 		WifiConfiguration config = new WifiConfiguration();
-		config.SSID = "MyWifiTether";
+		config.SSID = bundle.getString("ssid", "MyWifiTether");
 		config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
 		config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
-		config.preSharedKey = "superman";
+		config.preSharedKey = bundle.getString("passphrase", "superman");
 		
 		if (hotspotManager != null && wifi != null)
 		{
